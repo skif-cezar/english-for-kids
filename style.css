@@ -361,7 +361,6 @@ h1 {
     width: 100%;
     top: 0;
     bottom: 0;
-    background-size: contain;
     background-repeat: no-repeat;
     -webkit-transition: .3s;
     transition: .3s;
@@ -423,6 +422,40 @@ h1 {
 .card:hover {
     box-shadow: -1px 5px 15px 0 rgba(0,0,0,.5);
     cursor: pointer;
+}
+
+.button-start {
+    display: none;
+    padding: 10px 30px;
+    color: #fff;
+    background-color: #ff8052;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    transition: padding .3s,filter .3s;
+    margin: 0 auto;
+}
+
+.button-start_show {
+    display: block;
+}
+
+button, html input[type=button],
+input[type=reset], input[type=submit] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+
+button, select {
+    text-transform: none;
+}
+
+button {
+    overflow: visible;
+}
+
+.none {
+    display: none;
 }
 
 /* RESPONSIVE */
