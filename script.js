@@ -504,7 +504,15 @@ function cardCategoryRemove(cards, keyCode, container) {
             divFront.append(cardHeaderF);
             divBack.append(cardHeaderB);
             DIV.addEventListener('click', (e)=> {
-                if(e.target.classList == 'rotate') {
+                let isSwitch = localStorage.getItem('isSwitch');
+                if(isSwitch == 'on') {
+                    if(e.target.className == 'front') {
+                        let src = cards[keyCode][i].audioSrc;
+                        sound(src);
+                    }
+                }
+
+                if(e.target.className == 'rotate') {
                     e.target.parentElement.classList.add('translate');
                     DIV.addEventListener('mouseout', (event) => {
                         event.target.parentElement.classList.remove('translate');
@@ -541,6 +549,12 @@ SWITCH_INPUT.addEventListener('change', (e) => {
         CARDS.querySelectorAll('.back').forEach(el => el.classList.remove('none'));
     }
 })
+
+function sound(src) {
+    var audio = new Audio(); // Создаём новый элемент Audio
+    audio.src = src; // Указываем путь к звуку "клика"
+    audio.autoplay = true; // Автоматически запускаем
+}
 
 BUTTON_START.addEventListener('click', (event) => {
 
