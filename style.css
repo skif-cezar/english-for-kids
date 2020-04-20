@@ -440,6 +440,16 @@ h1 {
     display: block;
 }
 
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+audio, canvas, progress, video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+
 button, html input[type=button],
 input[type=reset], input[type=submit] {
     -webkit-appearance: button;
@@ -460,20 +470,32 @@ button {
 
 /* RESPONSIVE */
 
-@media only screen and (max-width: 730px) {
-    header {
-        max-width: 300px;
-    }
-}
-
-@media only screen and (max-width: 1080px) {
-    header {
-        max-width: 650px;
-    }
-}
-
-@media only screen and (max-width: 1430px) {
+@media only screen and (min-width: 1171px) and (max-width:1430px){
     header {
         max-width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 992px) and (max-width:1170px){
+    header {
+        max-width: 800px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+    header {
+        max-width: 700px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width:767px){
+    header {
+        max-width: 400px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width:479px){
+    header {
+        max-width: 290px;
     }
 }

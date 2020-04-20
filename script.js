@@ -431,14 +431,15 @@ MENU.addEventListener('click', (event) => {
     if(cardCategoryMenu.length == 0) {
         cardCategoryMenu = [...CARDS.querySelectorAll('.main-card')];
     }
-    let keyCode = event.target.getAttribute('data-id');
-    MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    event.target.classList.add('active');
-    MENU.style.transform = 'translate(-100%)';
-    HAMBURGER.classList.remove('active-burger');
-    MENU_BTN.classList.remove('active-burger');
-    console.log(keyCode);
-    cardCategoryRemove(cards, keyCode,cardCategoryMenu);
+    if(event.target.className == 'menu-item') {
+        let keyCode = event.target.getAttribute('data-id');
+        MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
+        event.target.classList.add('active');
+        MENU.style.transform = 'translate(-100%)';
+        HAMBURGER.classList.remove('active-burger');
+        MENU_BTN.classList.remove('active-burger');
+        cardCategoryRemove(cards, keyCode,cardCategoryMenu);
+    }
 });
 
 SWITCH.addEventListener('click', (event) => {
@@ -457,15 +458,16 @@ CARDS.addEventListener('click', (event) => {
     let menuLinks = [...MENU.querySelectorAll(".menu-item")];
     let cardCategory = [...CARDS.querySelectorAll(".main-card")];
     let keyCode = event.target.getAttribute('data-id');
+    let isSwitch = localStorage.getItem('isSwitch');
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    if(menuLinks.length != undefined) {
-        console.log( menuLinks[keyCode]);
-        menuLinks[keyCode].classList.toggle('active');
-    }
+    menuLinks[keyCode].classList.toggle('active');
     MENU.style.transform = 'translate(-100%)';
     HAMBURGER.classList.remove('active-burger');
     MENU_BTN.classList.remove('active-burger');
     cardCategoryRemove(cards, keyCode, cardCategory);
+    if(isSwitch == 'off' &&  SWITCH_INPUT.checked == false) {
+        BUTTON_START.classList.add('button-start_show');
+    }
 })
 
 function cardCategoryRemove(cards, keyCode, container) {
@@ -474,7 +476,7 @@ function cardCategoryRemove(cards, keyCode, container) {
         for (let i = 0; i < container.length; i++) {
             container[i].remove();
         }
-        for(let i = 0; i< cards[keyCode].length; i++) {
+        for(let i = 0; i < cards[keyCode].length; i++) {
 
             let DIV = document.createElement('div');
             let divCard = document.createElement('div');
@@ -501,11 +503,13 @@ function cardCategoryRemove(cards, keyCode, container) {
             divCard.append(divRotate);
             divFront.append(cardHeaderF);
             divBack.append(cardHeaderB);
-            DIV.addEventListener('click', (e)=>{
-                e.target.parentElement.classList.add('translate');
-                DIV.addEventListener('mouseout', (event) => {
-                    event.target.parentElement.classList.remove('translate');
-                })
+            DIV.addEventListener('click', (e)=> {
+                if(e.target.classList == 'rotate') {
+                    e.target.parentElement.classList.add('translate');
+                    DIV.addEventListener('mouseout', (event) => {
+                        event.target.parentElement.classList.remove('translate');
+                    })
+                }
             })
             divFront.style.backgroundImage = 'url('+cards[keyCode][i].image+')';
             divBack.style.backgroundImage = 'url('+cards[keyCode][i].image+')';
@@ -526,7 +530,10 @@ SWITCH_INPUT.addEventListener('change', (e) => {
         CARDS.querySelectorAll('a').forEach(el => el.classList.remove('blue'));
         MENU.classList.remove('blue');
         SWITCH_INPUT.checked = false;
-        BUTTON_START.classList.add('button-start_show');
+        let cardCategory = [...CARDS.querySelectorAll(".main-card")];
+        if(cardCategory.length == 0) {
+            BUTTON_START.classList.add('button-start_show');
+        }
     } else {
         BUTTON_START.classList.remove('button-start_show');
         CARDS.querySelectorAll('.card-header').forEach(el => el.classList.remove('none'));
@@ -535,18 +542,6 @@ SWITCH_INPUT.addEventListener('change', (e) => {
     }
 })
 
-let isSwitch = localStorage.getItem('isSwitch');
-if(isSwitch == 'off') {
-    CARDS.querySelectorAll('.card-header').forEach(el => el.classList.add('none'));
-    CARDS.querySelectorAll('.rotate').forEach(el => el.classList.add('none'));
-    CARDS.querySelectorAll('.back').forEach(el => el.classList.add('none'));
-    CARDS.querySelectorAll('a').forEach(el => el.classList.remove('blue'));
-    MENU.classList.remove('blue');
-    SWITCH_INPUT.checked = false;
-    BUTTON_START.classList.add('button-start_show');
-} else {
-    BUTTON_START.classList.remove('button-start_show');
-    CARDS.querySelectorAll('.card-header').forEach(el => el.classList.remove('none'));
-    CARDS.querySelectorAll('.rotate').forEach(el => el.classList.remove('none'));
-    CARDS.querySelectorAll('.back').forEach(el => el.classList.remove('none'));
-}
+BUTTON_START.addEventListener('click', (event) => {
+
+})
