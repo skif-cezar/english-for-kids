@@ -466,6 +466,7 @@ SWITCH_HANDLE.addEventListener('click', () => {
 CARDS.addEventListener('click', (event) => {
     let menuLinks = [...MENU.querySelectorAll(".menu-item")];
     let cardCategory = [...CARDS.querySelectorAll(".main-card")];
+    let cardContainer = [...CARDS.querySelectorAll(".card-container")];
     let keyCode = event.target.getAttribute('data-id');
     let isSwitch = localStorage.getItem('isSwitch');
     let correct = document.createElement('div');
@@ -481,17 +482,46 @@ CARDS.addEventListener('click', (event) => {
         let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
         correct.classList = 'correct';
         error.classList = 'error';
-        
-        if(sortCards[0].audioSrc == arrayCards[keyCode-1].audioSrc) {
-            sortCards.shift();
-            localStorage.setItem("sortCards", JSON.stringify(sortCards));
-            STATS_PANEL.append(correct);
-            sound('audio/correct.mp3');
-            event.target.classList.add('card-end');
-            setTimeout(nextSound, 2000);
-        } else if(event.target.classList.value != 'front card-end'){
-            STATS_PANEL.append(error);
-            sound('audio/error.mp3');
+
+        if(keyCode != null && sortCards.length != 0) {
+
+            if (sortCards[0].audioSrc == arrayCards[keyCode - 1].audioSrc) {
+                sortCards.shift();
+                console.log(sortCards);
+                localStorage.setItem("sortCards", JSON.stringify(sortCards));
+                STATS_PANEL.append(correct);
+                sound('audio/correct.mp3');
+                event.target.classList.add('card-end');
+                setTimeout(nextSound, 2000);
+            } else if (event.target.classList.value != 'front card-end') {
+                STATS_PANEL.append(error);
+                sound('audio/error.mp3');
+                localStorage.setItem('errors', 1);
+            }
+        }
+        let errors = localStorage.getItem('errors');
+        if(sortCards.length == 0) {
+           if (errors == 1) {
+               for (let i = 0; i < cardContainer.length; i++) {
+                   cardContainer[i].remove();
+               }
+               error.classList = 'failure';
+               CARDS.append(error);
+               sound('audio/failure.mp3');
+               setTimeout(function() {
+                   window.location.reload();
+               }, 5000);
+            } else {
+               for (let i = 0; i < cardContainer.length; i++) {
+                   cardContainer[i].remove();
+               }
+               correct.classList = 'success';
+               CARDS.append(correct);
+               sound('audio/success.mp3');
+               setTimeout(function() {
+                       window.location.reload();
+               }, 5000);
+            }
         }
     }
 
@@ -573,15 +603,18 @@ BUTTON_START.addEventListener('click', () => {
     let keyCode = localStorage.getItem('localKeyCode');
     if(BUTTON_START.title == 'Start game') {
         BUTTON_START.title = 'Repeat';
+        localStorage.setItem('errors', 0);
         BUTTON_START.classList.add('button-start_repeat');
         let sortCards = shuffle(cards[keyCode]);
         localStorage.setItem("sortCards", JSON.stringify(sortCards));
         let src = sortCards[0].audioSrc;
         sound(src);
-    } else{
+    } else {
         let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
-        let src = sortCards[0].audioSrc;
-        sound(src);
+        if (sortCards.length != 0) {
+            let src = sortCards[0].audioSrc;
+            sound(src);
+        }
     }
 })
 
@@ -622,8 +655,10 @@ function sound(src) {
 
 function nextSound() {
     let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
-    let src = sortCards[0].audioSrc;
-    sound(src);
+    if (sortCards.length != 0) {
+        let src = sortCards[0].audioSrc;
+        sound(src);
+    }
 }
 
 function shuffle(array) {
