@@ -481,15 +481,15 @@ CARDS.addEventListener('click', (event) => {
         let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
         correct.classList = 'correct';
         error.classList = 'error';
-
+        
         if(sortCards[0].audioSrc == arrayCards[keyCode-1].audioSrc) {
             sortCards.shift();
             localStorage.setItem("sortCards", JSON.stringify(sortCards));
             STATS_PANEL.append(correct);
             sound('audio/correct.mp3');
+            event.target.classList.add('card-end');
             setTimeout(nextSound, 2000);
-
-        } else {
+        } else if(event.target.classList.value != 'front card-end'){
             STATS_PANEL.append(error);
             sound('audio/error.mp3');
         }

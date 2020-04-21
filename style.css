@@ -392,6 +392,14 @@ h1 {
     backface-visibility: hidden;
 }
 
+.card-end {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
 .card-header {
     margin-top: 200px;
     padding: 0 15px;
@@ -530,21 +538,21 @@ button {
 
 @media only screen and (min-width: 768px) and (max-width:991px){
     header {
-        max-width: 700px;
+        max-width: 730px;
     }
 
     .stats-panel {
-        max-width: 700px;
+        max-width: 730px;
     }
 }
 
 @media only screen and (min-width: 480px) and (max-width:767px){
     header {
-        max-width: 400px;
+        max-width: 690px;
     }
 
     .stats-panel {
-        max-width: 400px;
+        max-width: 690px;
     }
 }
 
