@@ -1,7 +1,8 @@
 /* MENU */
 
 const cards = [
-    ['Action (set A)', 'Action (set B)', 'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions'],
+    ['Action (set A)', 'Action (set B)', 'Action (set C)', 'Adjective',
+        'Animal (set A)', 'Animal (set B)', 'Clothes', 'Emotions'],
     [
         {
             word: 'cry',
@@ -406,6 +407,7 @@ const cards = [
 
 //import cards from './cards.js';
 const MENU = document.querySelector('.menu');
+const TITLE = document.querySelector('.title');
 const MENU_BTN = document.querySelector('.burger-menu');
 const HAMBURGER = document.querySelector('.hamburger');
 const SWITCH = document.querySelector('.switch-label');
@@ -414,6 +416,8 @@ const SWITCH_INPUT = document.querySelector('.switch-input');
 const CARDS = document.querySelector('.cards-container');
 const card = document.querySelector('.card');
 const BUTTON_START = document.querySelector('.button-start');
+const STATS_PANEL = document.querySelector('.stats-panel');
+let isSwitch = localStorage.setItem('isSwitch', 'on');
 
 MENU_BTN.addEventListener('click', (e) => {
     e.preventDefault();
@@ -428,26 +432,30 @@ MENU_BTN.addEventListener('click', (e) => {
 
 MENU.addEventListener('click', (event) => {
     let cardCategoryMenu = [...CARDS.querySelectorAll('.card-container')];
+    let isSwitch = localStorage.getItem('isSwitch');
     if(cardCategoryMenu.length == 0) {
         cardCategoryMenu = [...CARDS.querySelectorAll('.main-card')];
     }
     if(event.target.className == 'menu-item') {
         let keyCode = event.target.getAttribute('data-id');
+        let localKeyCode = localStorage.setItem('localKeyCode', keyCode);
+        let arrayCards = localStorage.setItem("arrayCards", JSON.stringify(cards[keyCode]));
         MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
         event.target.classList.add('active');
         MENU.style.transform = 'translate(-100%)';
         HAMBURGER.classList.remove('active-burger');
         MENU_BTN.classList.remove('active-burger');
-        cardCategoryRemove(cards, keyCode,cardCategoryMenu);
+        cardCategoryRemove(cards, keyCode, cardCategoryMenu);
     }
+    checkSwitch(isSwitch);
 });
 
-SWITCH.addEventListener('click', (event) => {
+SWITCH.addEventListener('click', () => {
     CARDS.querySelectorAll('a').forEach(el => el.classList.toggle('blue'));
     MENU.classList.toggle('blue');
 });
 
-SWITCH_HANDLE.addEventListener('click', (event) => {
+SWITCH_HANDLE.addEventListener('click', () => {
     CARDS.querySelectorAll('a').forEach(el => el.classList.toggle('blue'));
     MENU.classList.toggle('blue');
 });
@@ -459,20 +467,53 @@ CARDS.addEventListener('click', (event) => {
     let cardCategory = [...CARDS.querySelectorAll(".main-card")];
     let keyCode = event.target.getAttribute('data-id');
     let isSwitch = localStorage.getItem('isSwitch');
+    let correct = document.createElement('div');
+    let error = document.createElement('div');
+
+    if(cardCategory != 0) {
+        let localKeyCode = localStorage.setItem('localKeyCode', keyCode);
+        let arrayCards = localStorage.setItem("arrayCards", JSON.stringify(cards[keyCode]));
+        cardCategoryRemove(cards, keyCode, cardCategory);
+    } else if(BUTTON_START.title == 'Repeat') {
+        let arrayCards = JSON.parse(window.localStorage.getItem('arrayCards'));
+        let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
+        correct.classList = 'correct';
+        error.classList = 'error';
+
+        if(sortCards[0].audioSrc == arrayCards[keyCode-1].audioSrc) {
+            sortCards.shift();
+            localStorage.setItem("sortCards", JSON.stringify(sortCards));
+            STATS_PANEL.append(correct);
+            sound('audio/correct.mp3');
+            setTimeout(nextSound, 2000);
+
+        } else {
+            STATS_PANEL.append(error);
+            sound('audio/error.mp3');
+        }
+    }
+
     MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
-    menuLinks[keyCode].classList.toggle('active');
+    if(menuLinks[keyCode] != undefined) {
+        menuLinks[keyCode].classList.toggle('active');
+    }
     MENU.style.transform = 'translate(-100%)';
     HAMBURGER.classList.remove('active-burger');
     MENU_BTN.classList.remove('active-burger');
-    cardCategoryRemove(cards, keyCode, cardCategory);
+
+
     if(isSwitch == 'off' &&  SWITCH_INPUT.checked == false) {
         BUTTON_START.classList.add('button-start_show');
     }
+    checkSwitch(isSwitch);
 })
 
 function cardCategoryRemove(cards, keyCode, container) {
+    BUTTON_START.classList.remove('button-start_repeat');
+    BUTTON_START.title = 'Start game';
 
     if(container.length !== 0 && container.length <= 8) {
+
         for (let i = 0; i < container.length; i++) {
             container[i].remove();
         }
@@ -490,6 +531,7 @@ function cardCategoryRemove(cards, keyCode, container) {
             divCard.classList = 'card';
             divRotate.classList = 'rotate'
             divFront.classList = 'front';
+            divFront.setAttribute('data-id', (i + 1));
             divBack.classList = 'back';
             cardHeaderF.classList = 'card-header';
             cardHeaderF.innerHTML = cards[keyCode][i].word;
@@ -525,12 +567,23 @@ function cardCategoryRemove(cards, keyCode, container) {
     }
 }
 
+BUTTON_START.addEventListener('click', () => {
+    let keyCode = localStorage.getItem('localKeyCode');
+    if(BUTTON_START.title == 'Start game') {
+        BUTTON_START.title = 'Repeat';
+        BUTTON_START.classList.add('button-start_repeat');
+        let sortCards = shuffle(cards[keyCode]);
+        localStorage.setItem("sortCards", JSON.stringify(sortCards));
+        let src = sortCards[0].audioSrc;
+        sound(src);
+    } else{
+        let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
+        let src = sortCards[0].audioSrc;
+        sound(src);
+    }
+})
 
-SWITCH_INPUT.addEventListener('change', (e) => {
-    this.isSwitch = e.target.checked ? 'on' : 'off';
-    localStorage.setItem('isSwitch', this.isSwitch);
-
-    let isSwitch = localStorage.getItem('isSwitch');
+function checkSwitch(isSwitch) {
     if(isSwitch == 'off') {
         CARDS.querySelectorAll('.card-header').forEach(el => el.classList.add('none'));
         CARDS.querySelectorAll('.rotate').forEach(el => el.classList.add('none'));
@@ -544,10 +597,19 @@ SWITCH_INPUT.addEventListener('change', (e) => {
         }
     } else {
         BUTTON_START.classList.remove('button-start_show');
+        BUTTON_START.classList.remove('button-start_repeat');
         CARDS.querySelectorAll('.card-header').forEach(el => el.classList.remove('none'));
         CARDS.querySelectorAll('.rotate').forEach(el => el.classList.remove('none'));
         CARDS.querySelectorAll('.back').forEach(el => el.classList.remove('none'));
     }
+}
+
+SWITCH_INPUT.addEventListener('change', (e) => {
+    this.isSwitch = e.target.checked ? 'on' : 'off';
+    localStorage.setItem('isSwitch', this.isSwitch);
+    let isSwitch = localStorage.getItem('isSwitch');
+
+    checkSwitch(isSwitch);
 })
 
 function sound(src) {
@@ -556,6 +618,14 @@ function sound(src) {
     audio.autoplay = true; // Автоматически запускаем
 }
 
-BUTTON_START.addEventListener('click', (event) => {
+function nextSound() {
+    let sortCards = JSON.parse(window.localStorage.getItem('sortCards'));
+    let src = sortCards[0].audioSrc;
+    sound(src);
+}
 
-})
+function shuffle(array) {
+    let cardSort = array.slice().sort(() => Math.random() - 0.5);
+    return cardSort;
+}
+

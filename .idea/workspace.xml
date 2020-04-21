@@ -27,8 +27,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.038462" vertical-offset="281" max-vertical-offset="1003">
-              <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+            <state vertical-scroll-proportion="-16.576923" vertical-offset="640" max-vertical-offset="1309">
+              <caret line="63" column="73" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="73" />
               <folding>
                 <element signature="n#style#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -39,18 +39,18 @@
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0018867925" vertical-offset="1971" max-vertical-offset="2856">
-              <caret line="508" column="22" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.5849057" vertical-offset="523" max-vertical-offset="4165">
+              <caret line="441" column="92" selection-start-line="441" selection-start-column="92" selection-end-line="441" selection-end-column="92" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#133#1467#0" expanded="false" />
-                <element signature="e#1473#2817#0" expanded="false" />
-                <element signature="e#2823#4161#0" expanded="false" />
-                <element signature="e#4167#5514#0" expanded="false" />
-                <element signature="e#5520#6862#0" expanded="false" />
-                <element signature="e#6868#8210#0" expanded="false" />
-                <element signature="e#8216#9591#0" expanded="false" />
-                <element signature="e#9597#10972#0" expanded="false" />
+                <element signature="e#172#1506#0" expanded="false" />
+                <element signature="e#1512#2856#0" expanded="false" />
+                <element signature="e#2862#4200#0" expanded="false" />
+                <element signature="e#4206#5553#0" expanded="false" />
+                <element signature="e#5559#6901#0" expanded="false" />
+                <element signature="e#6907#8249#0" expanded="false" />
+                <element signature="e#8255#9630#0" expanded="false" />
+                <element signature="e#9636#11011#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -59,7 +59,7 @@
       <file leaf-file-name="cards.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cards.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="1139">
+            <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
               <caret line="306" column="24" selection-start-line="306" selection-start-column="24" selection-end-line="306" selection-end-column="24" />
               <folding>
                 <element signature="e#118#1122#0" expanded="false" />
@@ -73,31 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/script.js">
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-27.75926" vertical-offset="1612" max-vertical-offset="3621">
-              <caret line="183" column="23" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="script.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../../../Virtual Keyboard/script.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.8888888" vertical-offset="0" max-vertical-offset="4709">
-              <caret line="6" column="29" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="29" />
+            <state vertical-scroll-proportion="-17.965517" vertical-offset="4324" max-vertical-offset="9214">
+              <caret line="285" column="56" selection-start-line="285" selection-start-column="56" selection-end-line="285" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
+        <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="5859" max-vertical-offset="8228">
-              <caret line="362" column="14" selection-start-line="362" selection-start-column="14" selection-end-line="362" selection-end-column="14" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="9205" max-vertical-offset="18258">
+              <caret line="881" column="0" selection-start-line="881" selection-start-column="0" selection-end-line="881" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -323,6 +313,130 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="640" max-vertical-offset="1309">
+          <caret line="53" column="51" selection-start-line="53" selection-start-column="51" selection-end-line="53" selection-end-column="51" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3451">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#172#1506#0" expanded="false" />
+            <element signature="e#1512#2856#0" expanded="false" />
+            <element signature="e#2862#4200#0" expanded="false" />
+            <element signature="e#4206#5553#0" expanded="false" />
+            <element signature="e#5559#6901#0" expanded="false" />
+            <element signature="e#6907#8249#0" expanded="false" />
+            <element signature="e#8255#9630#0" expanded="false" />
+            <element signature="e#9636#11011#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
+          <caret line="306" column="24" selection-start-line="306" selection-start-column="24" selection-end-line="306" selection-end-column="24" />
+          <folding>
+            <element signature="e#118#1122#0" expanded="false" />
+            <element signature="e#1126#2140#0" expanded="false" />
+            <element signature="e#2144#3152#0" expanded="false" />
+            <element signature="e#3156#4173#0" expanded="false" />
+            <element signature="e#4177#5189#0" expanded="false" />
+            <element signature="e#5193#6238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="8290" max-vertical-offset="8942">
+          <caret line="520" column="1" selection-start-line="520" selection-start-column="1" selection-end-line="520" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9205" max-vertical-offset="18258">
+          <caret line="881" column="0" selection-start-line="881" selection-start-column="0" selection-end-line="881" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1020">
+          <caret line="49" column="52" selection-start-line="49" selection-start-column="52" selection-end-line="49" selection-end-column="52" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2907">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#172#1506#0" expanded="false" />
+            <element signature="e#1512#2856#0" expanded="false" />
+            <element signature="e#2862#4200#0" expanded="false" />
+            <element signature="e#4206#5553#0" expanded="false" />
+            <element signature="e#5559#6901#0" expanded="false" />
+            <element signature="e#6907#8249#0" expanded="false" />
+            <element signature="e#8255#9630#0" expanded="false" />
+            <element signature="e#9636#11011#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
+          <caret line="306" column="24" selection-start-line="306" selection-start-column="24" selection-end-line="306" selection-end-column="24" />
+          <folding>
+            <element signature="e#118#1122#0" expanded="false" />
+            <element signature="e#1126#2140#0" expanded="false" />
+            <element signature="e#2144#3152#0" expanded="false" />
+            <element signature="e#3156#4173#0" expanded="false" />
+            <element signature="e#4177#5189#0" expanded="false" />
+            <element signature="e#5193#6238#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1612" max-vertical-offset="3621">
+          <caret line="183" column="23" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Virtual Keyboard/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="4709">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="7108" max-vertical-offset="8398">
+          <caret line="450" column="1" selection-start-line="450" selection-start-column="1" selection-end-line="450" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="319" max-vertical-offset="952">
           <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
           <folding>
@@ -343,7 +457,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1239" max-vertical-offset="5491">
           <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -353,14 +466,14 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#133#1467#0" expanded="false" />
-            <element signature="e#1473#2817#0" expanded="false" />
-            <element signature="e#2823#4161#0" expanded="false" />
-            <element signature="e#4167#5514#0" expanded="false" />
-            <element signature="e#5520#6862#0" expanded="false" />
-            <element signature="e#6868#8210#0" expanded="false" />
-            <element signature="e#8216#9591#0" expanded="false" />
-            <element signature="e#9597#10972#0" expanded="false" />
+            <element signature="e#172#1506#0" expanded="false" />
+            <element signature="e#1512#2856#0" expanded="false" />
+            <element signature="e#2862#4200#0" expanded="false" />
+            <element signature="e#4206#5553#0" expanded="false" />
+            <element signature="e#5559#6901#0" expanded="false" />
+            <element signature="e#6907#8249#0" expanded="false" />
+            <element signature="e#8255#9630#0" expanded="false" />
+            <element signature="e#9636#11011#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -369,7 +482,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="2926" max-vertical-offset="3621">
           <caret line="183" column="74" selection-start-line="183" selection-start-column="4" selection-end-line="183" selection-end-column="74" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -388,19 +500,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="9205" max-vertical-offset="18258">
-          <caret line="881" column="0" selection-start-line="881" selection-start-column="0" selection-end-line="881" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.6738351" vertical-offset="1239" max-vertical-offset="5491">
           <caret line="95" column="30" selection-start-line="95" selection-start-column="30" selection-end-line="95" selection-end-column="30" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -408,23 +511,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.8253425" vertical-offset="4754" max-vertical-offset="5338">
           <caret line="308" column="21" selection-start-line="308" selection-start-column="21" selection-end-line="308" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../../../Virtual Keyboard/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.8888888" vertical-offset="0" max-vertical-offset="4709">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="4709">
           <caret line="6" column="29" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.75926" vertical-offset="1612" max-vertical-offset="3621">
-          <caret line="183" column="23" selection-start-line="183" selection-start-column="23" selection-end-line="183" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -436,9 +529,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="9205" max-vertical-offset="18258">
+          <caret line="881" column="0" selection-start-line="881" selection-start-column="0" selection-end-line="881" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../../Singolo/git/singolo/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3649374" vertical-offset="2856" max-vertical-offset="3621">
+          <caret line="180" column="0" selection-start-line="180" selection-start-column="0" selection-end-line="180" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/cards.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.16" vertical-offset="0" max-vertical-offset="1139">
+        <state vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1139">
           <caret line="306" column="24" selection-start-line="306" selection-start-column="24" selection-end-line="306" selection-end-column="24" />
           <folding>
             <element signature="e#118#1122#0" expanded="false" />
@@ -453,8 +561,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.038462" vertical-offset="281" max-vertical-offset="1003">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+        <state vertical-scroll-proportion="-16.576923" vertical-offset="640" max-vertical-offset="1309">
+          <caret line="63" column="73" selection-start-line="63" selection-start-column="73" selection-end-line="63" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#ul#0;n#nav#0;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -463,26 +571,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="5859" max-vertical-offset="8228">
-          <caret line="362" column="14" selection-start-line="362" selection-start-column="14" selection-end-line="362" selection-end-column="14" />
+        <state vertical-scroll-proportion="-17.965517" vertical-offset="4324" max-vertical-offset="9214">
+          <caret line="285" column="56" selection-start-line="285" selection-start-column="56" selection-end-line="285" selection-end-column="56" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0018867925" vertical-offset="1971" max-vertical-offset="2856">
-          <caret line="508" column="22" selection-start-line="508" selection-start-column="22" selection-end-line="508" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.5849057" vertical-offset="523" max-vertical-offset="4165">
+          <caret line="441" column="92" selection-start-line="441" selection-start-column="92" selection-end-line="441" selection-end-column="92" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#133#1467#0" expanded="false" />
-            <element signature="e#1473#2817#0" expanded="false" />
-            <element signature="e#2823#4161#0" expanded="false" />
-            <element signature="e#4167#5514#0" expanded="false" />
-            <element signature="e#5520#6862#0" expanded="false" />
-            <element signature="e#6868#8210#0" expanded="false" />
-            <element signature="e#8216#9591#0" expanded="false" />
-            <element signature="e#9597#10972#0" expanded="false" />
+            <element signature="e#172#1506#0" expanded="false" />
+            <element signature="e#1512#2856#0" expanded="false" />
+            <element signature="e#2862#4200#0" expanded="false" />
+            <element signature="e#4206#5553#0" expanded="false" />
+            <element signature="e#5559#6901#0" expanded="false" />
+            <element signature="e#6907#8249#0" expanded="false" />
+            <element signature="e#8255#9630#0" expanded="false" />
+            <element signature="e#9636#11011#0" expanded="false" />
           </folding>
         </state>
       </provider>

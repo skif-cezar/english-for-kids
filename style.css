@@ -270,6 +270,22 @@ h1 {
     overflow: hidden;
 }
 
+.correct, .error {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-position: 50% center;
+}
+
+.error {
+    background-image: url(./assets/img/errorAnswer.png);
+}
+
+.correct {
+    background-image: url(./assets/img/correctAnswer.png);
+}
+
 .cards-container, .main-card {
     display: -webkit-box;
     display: flex;
@@ -440,6 +456,20 @@ h1 {
     display: block;
 }
 
+.button-start_repeat {
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    font-size: 0;
+    background-color: transparent;
+    background-image: url(./assets/img/sync-alt-solid.svg);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 70%;
+    border-width: 0;
+    border-radius: 50%;
+}
+
 audio:not([controls]) {
     display: none;
     height: 0;
@@ -497,5 +527,11 @@ button {
 @media only screen and (min-width: 320px) and (max-width:479px){
     header {
         max-width: 290px;
+    }
+}
+
+@media (hover: hover) {
+    .button-start_repeat:hover {
+        filter: invert(1);
     }
 }
