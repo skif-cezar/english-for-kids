@@ -438,6 +438,7 @@ MENU.addEventListener('click', (event) => {
     }
     if(event.target.className == 'menu-item') {
         let keyCode = event.target.getAttribute('data-id');
+        TITLE.innerHTML = cards[0][keyCode-1];
         let localKeyCode = localStorage.setItem('localKeyCode', keyCode);
         let arrayCards = localStorage.setItem("arrayCards", JSON.stringify(cards[keyCode]));
         MENU.querySelectorAll('a').forEach(el => el.classList.remove('active'));
@@ -473,6 +474,7 @@ CARDS.addEventListener('click', (event) => {
     if(cardCategory != 0) {
         let localKeyCode = localStorage.setItem('localKeyCode', keyCode);
         let arrayCards = localStorage.setItem("arrayCards", JSON.stringify(cards[keyCode]));
+        TITLE.innerHTML = cards[0][keyCode-1];
         cardCategoryRemove(cards, keyCode, cardCategory);
     } else if(BUTTON_START.title == 'Repeat') {
         let arrayCards = JSON.parse(window.localStorage.getItem('arrayCards'));

@@ -246,6 +246,13 @@ nav {
 
 /* CONTAINER WITH CARDS */
 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
 .title {
     padding: 0;
     margin: 0;
@@ -298,6 +305,7 @@ h1 {
     justify-content: center;
     padding: 10px 15px;
     max-width: 1440px;
+    width: 100%;
     margin: auto;
 }
 
@@ -504,10 +512,18 @@ button {
     header {
         max-width: 1000px;
     }
+
+    .stats-panel {
+        max-width: 1000px;
+    }
 }
 
 @media only screen and (min-width: 992px) and (max-width:1170px){
     header {
+        max-width: 800px;
+    }
+
+    .stats-panel {
         max-width: 800px;
     }
 }
@@ -516,16 +532,28 @@ button {
     header {
         max-width: 700px;
     }
+
+    .stats-panel {
+        max-width: 700px;
+    }
 }
 
 @media only screen and (min-width: 480px) and (max-width:767px){
     header {
         max-width: 400px;
     }
+
+    .stats-panel {
+        max-width: 400px;
+    }
 }
 
 @media only screen and (min-width: 320px) and (max-width:479px){
     header {
+        max-width: 290px;
+    }
+
+    .stats-panel {
         max-width: 290px;
     }
 }
