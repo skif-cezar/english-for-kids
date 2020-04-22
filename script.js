@@ -420,12 +420,14 @@ let isSwitch = localStorage.setItem('isSwitch', 'on');
 
 MENU_BTN.addEventListener('click', (e) => {
     e.preventDefault();
-    e.target.classList.toggle('active-burger');
-    HAMBURGER.classList.toggle('active-burger');
-    if(MENU.style.transform == 'translate(-100%)'){
-        MENU.style.transform = 'translate(0%)';
-    } else {
+    if(MENU_BTN.classList.value == 'burger-menu active-burger') {
+        MENU_BTN.classList.remove('active-burger');
+        HAMBURGER.classList.remove('active-burger');
         MENU.style.transform = 'translate(-100%)';
+    } else {
+        MENU_BTN.classList.add('active-burger');
+        HAMBURGER.classList.add('active-burger');
+        MENU.style.transform = 'translate(0%)';
     }
 });
 
