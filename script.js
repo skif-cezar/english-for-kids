@@ -105,6 +105,106 @@ const cards = [
     ],
     [
         {
+            word: 'skirt',
+            translation: 'юбка',
+            image: './assets/img/skirt.jpg',
+            audioSrc: 'audio/skirt.mp3'
+        },
+        {
+            word: 'pants',
+            translation: 'брюки',
+            image: './assets/img/pants.jpg',
+            audioSrc: 'audio/pants.mp3'
+        },
+        {
+            word: 'blouse',
+            translation: 'блузка',
+            image: './assets/img/blouse.jpg',
+            audioSrc: 'audio/blouse.mp3'
+        },
+        {
+            word: 'dress',
+            translation: 'платье',
+            image: './assets/img/dress.jpg',
+            audioSrc: 'audio/dress.mp3'
+        },
+        {
+            word: 'boot',
+            translation: 'ботинок',
+            image: './assets/img/boot.jpg',
+            audioSrc: 'audio/boot.mp3'
+        },
+        {
+            word: 'shirt',
+            translation: 'рубашка',
+            image: './assets/img/shirt.jpg',
+            audioSrc: 'audio/shirt.mp3'
+        },
+        {
+            word: 'coat',
+            translation: 'пальто',
+            image: './assets/img/coat.jpg',
+            audioSrc: 'audio/coat.mp3'
+        },
+        {
+            word: 'shoe',
+            translation: 'туфли',
+            image: './assets/img/shoe.jpg',
+            audioSrc: 'audio/shoe.mp3'
+        }
+    ],
+    [
+        {
+            word: 'sad',
+            translation: 'грустный',
+            image: './assets/img/sad.jpg',
+            audioSrc: 'audio/sad.mp3'
+        },
+        {
+            word: 'angry',
+            translation: 'сердитый',
+            image: './assets/img/angry.jpg',
+            audioSrc: 'audio/angry.mp3'
+        },
+        {
+            word: 'happy',
+            translation: 'счастливый',
+            image: './assets/img/happy.jpg',
+            audioSrc: 'audio/happy.mp3'
+        },
+        {
+            word: 'tired',
+            translation: 'уставший',
+            image: './assets/img/tired.jpg',
+            audioSrc: 'audio/tired.mp3'
+        },
+        {
+            word: 'surprised',
+            translation: 'удивлённый',
+            image: './assets/img/surprised.jpg',
+            audioSrc: 'audio/surprised.mp3'
+        },
+        {
+            word: 'scared',
+            translation: 'испуганный',
+            image: './assets/img/scared.jpg',
+            audioSrc: 'audio/scared.mp3'
+        },
+        {
+            word: 'smile',
+            translation: 'улыбка',
+            image: './assets/img/smile.jpg',
+            audioSrc: 'audio/smile.mp3'
+        },
+        {
+            word: 'laugh',
+            translation: 'смех',
+            image: './assets/img/laugh.jpg',
+            audioSrc: 'audio/laugh.mp3'
+        }
+    ],
+    [
+        {
             word: 'cat',
             translation: 'кот',
             image: './assets/img/cat.jpg',
@@ -255,106 +355,6 @@ const cards = [
     ],
     [
         {
-            word: 'skirt',
-            translation: 'юбка',
-            image: './assets/img/skirt.jpg',
-            audioSrc: 'audio/skirt.mp3'
-        },
-        {
-            word: 'pants',
-            translation: 'брюки',
-            image: './assets/img/pants.jpg',
-            audioSrc: 'audio/pants.mp3'
-        },
-        {
-            word: 'blouse',
-            translation: 'блузка',
-            image: './assets/img/blouse.jpg',
-            audioSrc: 'audio/blouse.mp3'
-        },
-        {
-            word: 'dress',
-            translation: 'платье',
-            image: './assets/img/dress.jpg',
-            audioSrc: 'audio/dress.mp3'
-        },
-        {
-            word: 'boot',
-            translation: 'ботинок',
-            image: './assets/img/boot.jpg',
-            audioSrc: 'audio/boot.mp3'
-        },
-        {
-            word: 'shirt',
-            translation: 'рубашка',
-            image: './assets/img/shirt.jpg',
-            audioSrc: 'audio/shirt.mp3'
-        },
-        {
-            word: 'coat',
-            translation: 'пальто',
-            image: './assets/img/coat.jpg',
-            audioSrc: 'audio/coat.mp3'
-        },
-        {
-            word: 'shoe',
-            translation: 'туфли',
-            image: './assets/img/shoe.jpg',
-            audioSrc: 'audio/shoe.mp3'
-        }
-    ],
-    [
-        {
-            word: 'sad',
-            translation: 'грустный',
-            image: './assets/img/sad.jpg',
-            audioSrc: 'audio/sad.mp3'
-        },
-        {
-            word: 'angry',
-            translation: 'сердитый',
-            image: './assets/img/angry.jpg',
-            audioSrc: 'audio/angry.mp3'
-        },
-        {
-            word: 'happy',
-            translation: 'счастливый',
-            image: './assets/img/happy.jpg',
-            audioSrc: 'audio/happy.mp3'
-        },
-        {
-            word: 'tired',
-            translation: 'уставший',
-            image: './assets/img/tired.jpg',
-            audioSrc: 'audio/tired.mp3'
-        },
-        {
-            word: 'surprised',
-            translation: 'удивлённый',
-            image: './assets/img/surprised.jpg',
-            audioSrc: 'audio/surprised.mp3'
-        },
-        {
-            word: 'scared',
-            translation: 'испуганный',
-            image: './assets/img/scared.jpg',
-            audioSrc: 'audio/scared.mp3'
-        },
-        {
-            word: 'smile',
-            translation: 'улыбка',
-            image: './assets/img/smile.jpg',
-            audioSrc: 'audio/smile.mp3'
-        },
-        {
-            word: 'laugh',
-            translation: 'смех',
-            image: './assets/img/laugh.jpg',
-            audioSrc: 'audio/laugh.mp3'
-        }
-    ],
-    [
-        {
             word: 'sad',
             translation: 'грустный',
             image: './assets/img/sad.jpg',
@@ -405,7 +405,6 @@ const cards = [
     ]
 ];
 
-//import cards from './cards.js';
 const MENU = document.querySelector('.menu');
 const TITLE = document.querySelector('.title');
 const MENU_BTN = document.querySelector('.burger-menu');
