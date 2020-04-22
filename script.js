@@ -437,6 +437,7 @@ MENU.addEventListener('click', (event) => {
     }
     if(event.target.className == 'menu-item') {
         let keyCode = event.target.getAttribute('data-id');
+        cardCategoryRemove(cards, keyCode, cardCategoryMenu);
         TITLE.innerHTML = cards[0][keyCode-1];
         let localKeyCode = localStorage.setItem('localKeyCode', keyCode);
         let arrayCards = localStorage.setItem("arrayCards", JSON.stringify(cards[keyCode]));
@@ -445,7 +446,6 @@ MENU.addEventListener('click', (event) => {
         MENU.style.transform = 'translate(-100%)';
         HAMBURGER.classList.remove('active-burger');
         MENU_BTN.classList.remove('active-burger');
-        cardCategoryRemove(cards, keyCode, cardCategoryMenu);
     }
     checkSwitch(isSwitch);
 });
