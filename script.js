@@ -105,106 +105,6 @@ const cards = [
     ],
     [
         {
-            word: 'skirt',
-            translation: 'юбка',
-            image: './assets/img/skirt.jpg',
-            audioSrc: 'audio/skirt.mp3'
-        },
-        {
-            word: 'pants',
-            translation: 'брюки',
-            image: './assets/img/pants.jpg',
-            audioSrc: 'audio/pants.mp3'
-        },
-        {
-            word: 'blouse',
-            translation: 'блузка',
-            image: './assets/img/blouse.jpg',
-            audioSrc: 'audio/blouse.mp3'
-        },
-        {
-            word: 'dress',
-            translation: 'платье',
-            image: './assets/img/dress.jpg',
-            audioSrc: 'audio/dress.mp3'
-        },
-        {
-            word: 'boot',
-            translation: 'ботинок',
-            image: './assets/img/boot.jpg',
-            audioSrc: 'audio/boot.mp3'
-        },
-        {
-            word: 'shirt',
-            translation: 'рубашка',
-            image: './assets/img/shirt.jpg',
-            audioSrc: 'audio/shirt.mp3'
-        },
-        {
-            word: 'coat',
-            translation: 'пальто',
-            image: './assets/img/coat.jpg',
-            audioSrc: 'audio/coat.mp3'
-        },
-        {
-            word: 'shoe',
-            translation: 'туфли',
-            image: './assets/img/shoe.jpg',
-            audioSrc: 'audio/shoe.mp3'
-        }
-    ],
-    [
-        {
-            word: 'sad',
-            translation: 'грустный',
-            image: './assets/img/sad.jpg',
-            audioSrc: 'audio/sad.mp3'
-        },
-        {
-            word: 'angry',
-            translation: 'сердитый',
-            image: './assets/img/angry.jpg',
-            audioSrc: 'audio/angry.mp3'
-        },
-        {
-            word: 'happy',
-            translation: 'счастливый',
-            image: './assets/img/happy.jpg',
-            audioSrc: 'audio/happy.mp3'
-        },
-        {
-            word: 'tired',
-            translation: 'уставший',
-            image: './assets/img/tired.jpg',
-            audioSrc: 'audio/tired.mp3'
-        },
-        {
-            word: 'surprised',
-            translation: 'удивлённый',
-            image: './assets/img/surprised.jpg',
-            audioSrc: 'audio/surprised.mp3'
-        },
-        {
-            word: 'scared',
-            translation: 'испуганный',
-            image: './assets/img/scared.jpg',
-            audioSrc: 'audio/scared.mp3'
-        },
-        {
-            word: 'smile',
-            translation: 'улыбка',
-            image: './assets/img/smile.jpg',
-            audioSrc: 'audio/smile.mp3'
-        },
-        {
-            word: 'laugh',
-            translation: 'смех',
-            image: './assets/img/laugh.jpg',
-            audioSrc: 'audio/laugh.mp3'
-        }
-    ],
-    [
-        {
             word: 'cat',
             translation: 'кот',
             image: './assets/img/cat.jpg',
@@ -355,6 +255,106 @@ const cards = [
     ],
     [
         {
+            word: 'skirt',
+            translation: 'юбка',
+            image: './assets/img/skirt.jpg',
+            audioSrc: 'audio/skirt.mp3'
+        },
+        {
+            word: 'pants',
+            translation: 'брюки',
+            image: './assets/img/pants.jpg',
+            audioSrc: 'audio/pants.mp3'
+        },
+        {
+            word: 'blouse',
+            translation: 'блузка',
+            image: './assets/img/blouse.jpg',
+            audioSrc: 'audio/blouse.mp3'
+        },
+        {
+            word: 'dress',
+            translation: 'платье',
+            image: './assets/img/dress.jpg',
+            audioSrc: 'audio/dress.mp3'
+        },
+        {
+            word: 'boot',
+            translation: 'ботинок',
+            image: './assets/img/boot.jpg',
+            audioSrc: 'audio/boot.mp3'
+        },
+        {
+            word: 'shirt',
+            translation: 'рубашка',
+            image: './assets/img/shirt.jpg',
+            audioSrc: 'audio/shirt.mp3'
+        },
+        {
+            word: 'coat',
+            translation: 'пальто',
+            image: './assets/img/coat.jpg',
+            audioSrc: 'audio/coat.mp3'
+        },
+        {
+            word: 'shoe',
+            translation: 'туфли',
+            image: './assets/img/shoe.jpg',
+            audioSrc: 'audio/shoe.mp3'
+        }
+    ],
+    [
+        {
+            word: 'sad',
+            translation: 'грустный',
+            image: './assets/img/sad.jpg',
+            audioSrc: 'audio/sad.mp3'
+        },
+        {
+            word: 'angry',
+            translation: 'сердитый',
+            image: './assets/img/angry.jpg',
+            audioSrc: 'audio/angry.mp3'
+        },
+        {
+            word: 'happy',
+            translation: 'счастливый',
+            image: './assets/img/happy.jpg',
+            audioSrc: 'audio/happy.mp3'
+        },
+        {
+            word: 'tired',
+            translation: 'уставший',
+            image: './assets/img/tired.jpg',
+            audioSrc: 'audio/tired.mp3'
+        },
+        {
+            word: 'surprised',
+            translation: 'удивлённый',
+            image: './assets/img/surprised.jpg',
+            audioSrc: 'audio/surprised.mp3'
+        },
+        {
+            word: 'scared',
+            translation: 'испуганный',
+            image: './assets/img/scared.jpg',
+            audioSrc: 'audio/scared.mp3'
+        },
+        {
+            word: 'smile',
+            translation: 'улыбка',
+            image: './assets/img/smile.jpg',
+            audioSrc: 'audio/smile.mp3'
+        },
+        {
+            word: 'laugh',
+            translation: 'смех',
+            image: './assets/img/laugh.jpg',
+            audioSrc: 'audio/laugh.mp3'
+        }
+    ],
+    [
+        {
             word: 'sad',
             translation: 'грустный',
             image: './assets/img/sad.jpg',
@@ -420,14 +420,12 @@ let isSwitch = localStorage.setItem('isSwitch', 'on');
 
 MENU_BTN.addEventListener('click', (e) => {
     e.preventDefault();
-    if(MENU_BTN.classList.value == 'burger-menu active-burger') {
-        MENU_BTN.classList.remove('active-burger');
-        HAMBURGER.classList.remove('active-burger');
-        MENU.style.transform = 'translate(-100%)';
-    } else {
-        MENU_BTN.classList.add('active-burger');
-        HAMBURGER.classList.add('active-burger');
+    e.target.classList.toggle('active-burger');
+    HAMBURGER.classList.toggle('active-burger');
+    if(MENU.style.transform == 'translate(-100%)'){
         MENU.style.transform = 'translate(0%)';
+    } else {
+        MENU.style.transform = 'translate(-100%)';
     }
 });
 
@@ -439,7 +437,6 @@ MENU.addEventListener('click', (event) => {
     }
     if(event.target.className == 'menu-item') {
         let keyCode = event.target.getAttribute('data-id');
-        cardCategoryRemove(cards, keyCode, cardCategoryMenu);
         TITLE.innerHTML = cards[0][keyCode-1];
         let localKeyCode = localStorage.setItem('localKeyCode', keyCode);
         let arrayCards = localStorage.setItem("arrayCards", JSON.stringify(cards[keyCode]));
@@ -448,6 +445,7 @@ MENU.addEventListener('click', (event) => {
         MENU.style.transform = 'translate(-100%)';
         HAMBURGER.classList.remove('active-burger');
         MENU_BTN.classList.remove('active-burger');
+        cardCategoryRemove(cards, keyCode, cardCategoryMenu);
     }
     checkSwitch(isSwitch);
 });
@@ -488,7 +486,6 @@ CARDS.addEventListener('click', (event) => {
 
             if (sortCards[0].audioSrc == arrayCards[keyCode - 1].audioSrc) {
                 sortCards.shift();
-                console.log(sortCards);
                 localStorage.setItem("sortCards", JSON.stringify(sortCards));
                 STATS_PANEL.append(correct);
                 sound('audio/correct.mp3');
@@ -506,12 +503,14 @@ CARDS.addEventListener('click', (event) => {
                for (let i = 0; i < cardContainer.length; i++) {
                    cardContainer[i].remove();
                }
+               let countErrors = [...STATS_PANEL.querySelectorAll(".error")];
+               TITLE.innerHTML = (countErrors.length + 'errors');
                error.classList = 'failure';
                CARDS.append(error);
                sound('audio/failure.mp3');
                setTimeout(function() {
                    window.location.reload();
-               }, 5000);
+               }, 7000);
             } else {
                for (let i = 0; i < cardContainer.length; i++) {
                    cardContainer[i].remove();
@@ -521,7 +520,7 @@ CARDS.addEventListener('click', (event) => {
                sound('audio/success.mp3');
                setTimeout(function() {
                        window.location.reload();
-               }, 5000);
+               }, 7000);
             }
         }
     }
